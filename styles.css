@@ -1,3 +1,7 @@
+* {
+  margin:0;
+  padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +10,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url(svgs/background.svg);
 }
 
 #container {
@@ -26,10 +31,20 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  transition: 1s;
 }
 
-a:hover {
-  color: #111;
+.logo {
+  transition: 1s;
+}
+
+a:hover{
+  color: red;
+}
+
+a:hover .logo{
+  fill: red;
+  transform: scale(1.2);
 }
 
 header {
@@ -43,7 +58,6 @@ header nav {
 
 header nav ul li {
   display: inline-block;
-  margin-right: 20px;
 }
 
 main {
@@ -59,4 +73,84 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+.logo-heading {
+    display: none;
+    color:#EAAA7F;
+}
+
+.main-logo {
+  transition: 2s;
+}
+
+.main-logo:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+#symbol {
+  display: none;
+}
+
+#corgi1 {
+  color:#B18261;
+}
+
+#corgi2 {
+  color: #E0AD88;
+}
+
+#corgi3 {
+  color: #7C4D30;
+}
+
+#corgi4 {
+  color: #53595D;
+}
+
+.corgi-container {
+  display: inline-block;
+  width: 20%;
+  margin: auto;
+}
+
+.corgi-container p {
+  color:currentColor;
+  text-align: center;
+
+}
+.corgi-face {
+  fill: currentColor;
+  margin: auto;
+}
+@media (max-width: 425px) {
+
+
+  .corgi-container {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .logo-heading {
+    display: block;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1em;
+    }
+
+
+    .corgi-container {
+      display: inline-block;
+      width: 50%;
+    }
+
+
+
 }
