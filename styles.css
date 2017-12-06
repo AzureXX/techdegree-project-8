@@ -77,8 +77,11 @@ footer {
 
 
 .logo-heading {
-    display: none;
     color:#EAAA7F;
+}
+
+.logo-text {
+  opacity: 0;
 }
 
 .main-logo {
@@ -110,7 +113,7 @@ footer {
 
 .corgi-container {
   display: inline-block;
-  width: 20%;
+  width: 100%;
   margin: auto;
 }
 
@@ -123,34 +126,26 @@ footer {
   fill: currentColor;
   margin: auto;
 }
-@media (max-width: 425px) {
-
+@media (min-width: 425px) {
 
   .corgi-container {
-    display: inline-block;
-    width: 50%;
+    width: 40%;
   }
 
+
   .logo-heading {
-    display: block;
+    display: none;
   }
 
   .logo-text {
-    display: none;
+    opacity: 1;
   }
 }
 
-@media (max-width: 768px) {
-    h1 {
-      font-size: 1em;
-    }
-
+@media (min-width: 1024px) {
 
     .corgi-container {
-      display: inline-block;
-      width: 50%;
+      width: 20%;
     }
-
-
 
 }
